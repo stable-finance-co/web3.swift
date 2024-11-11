@@ -193,7 +193,7 @@ public class ABIEncoder {
 }
 
 extension Array where Element == ABIEncoder.EncodedValue {
-    func encoded(isDynamic: Bool) throws -> [UInt8] {
+    public func encoded(isDynamic: Bool) throws -> [UInt8] {
         var head = [UInt8]()
         var tail = [UInt8]()
 

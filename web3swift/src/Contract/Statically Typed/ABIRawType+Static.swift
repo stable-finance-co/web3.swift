@@ -588,7 +588,7 @@ public struct Data32: ABIStaticSizeDataType {
 
     public static var parser: ParserFunction = DataParser
 
-    var rawData: Data
+    public var rawData: Data
 
     public init(data: Data) {
         self.rawData = data
