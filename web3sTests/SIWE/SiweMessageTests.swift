@@ -4,7 +4,7 @@
 //
 
 import XCTest
-@testable import web3
+@testable import stable-web3-swift
 
 final class SiweMessageTests: XCTestCase {
 

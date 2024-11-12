@@ -4,7 +4,7 @@
 //
 
 import Foundation
-import web3
+import stable-web3-swift
 
 struct TestConfig {
     // This is the proxy URL for connecting to the Blockchain. For testing we usually use the Sepolia network on Infura. Using free tier, so might hit rate limits

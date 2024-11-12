@@ -2,15 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "web3.swift",
+    name: "stable-web3-swift",
     platforms: [
         .iOS(SupportedPlatform.IOSVersion.v13),
         .macOS(SupportedPlatform.MacOSVersion.v11),
         .watchOS(.v7)
     ],
     products: [
-        .library(name: "web3.swift", targets: ["web3"]),
-        .library(name: "web3-zksync.swift", targets: ["web3-zksync"])
+        .library(name: "stable-web3-swift", targets: ["stable-web3-swift"]),
     ],
     dependencies: [
         .package(url: "https://github.com/attaswift/BigInt", from: "5.3.0"),
@@ -21,7 +20,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "web3",
+            name: "stable-web3-swift",
             dependencies:
                 [
                     .target(name: "keccaktiny"),
@@ -36,14 +35,14 @@ let package = Package(
             path: "web3swift/src",
             exclude: ["ZKSync"]
         ),
-         .target(
-            name: "web3-zksync",
-            dependencies:
-                [
-                    .target(name: "web3")
-                ],
-            path: "web3swift/src/ZKSync"
-        ),
+        .target(
+           name: "web3-zksync",
+           dependencies:
+               [
+                   .target(name: "stable-web3-swift")
+               ],
+           path: "web3swift/src/ZKSync"
+       ),
         .target(
             name: "keccaktiny",
             dependencies: [],
@@ -63,7 +62,7 @@ let package = Package(
         ),
         .testTarget(
             name: "web3swiftTests",
-            dependencies: ["web3", "web3-zksync"],
+            dependencies: ["stable-web3-swift", "web3-zksync"],
             path: "web3sTests",
             resources: [
                 .copy("Resources/rlptests.json"),

@@ -5,7 +5,7 @@
 
 import BigInt
 import XCTest
-@testable import web3
+@testable import stable-web3-swift
 
 class ERC165Tests: XCTestCase {
     var client: EthereumClientProtocol!
