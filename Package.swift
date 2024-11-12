@@ -1,4 +1,4 @@
-// swift-tools-version:6.0
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/attaswift/BigInt", from: "5.3.0"),
         .package(url: "https://github.com/iwill/generic-json-swift", .upToNextMajor(from: "2.0.0")),
-        .package(url: "https://github.com/GigaBitcoin/secp256k1.swift.git", .upToNextMajor(from: "0.6.0")),
+        .package(url: "https://github.com/GigaBitcoin/secp256k1.swift.git", .exactItem("0.12.2")),
         .package(url: "https://github.com/vapor/websocket-kit.git", from: "2.0.0"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0")
     ],
