@@ -4,7 +4,7 @@
 //
 
 import XCTest
-@testable import stable-web3-swift
+@testable import web3
 
 class MulticallTests: XCTestCase {
     var client: EthereumClientProtocol!

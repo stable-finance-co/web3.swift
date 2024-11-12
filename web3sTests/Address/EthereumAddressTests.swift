@@ -4,7 +4,7 @@
 //
 
 import XCTest
-@testable import stable-web3-swift
+@testable import web3
 
 class EthereumAddressTests: XCTestCase {
     private var values: Set<EthereumAddress>!

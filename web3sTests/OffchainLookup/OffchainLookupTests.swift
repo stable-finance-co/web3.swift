@@ -5,7 +5,7 @@
 
 import BigInt
 import XCTest
-@testable import stable-web3-swift
+@testable import web3
 
 struct DummyOffchainENSResolve: ABIFunction {
     static var name: String = "resolver"

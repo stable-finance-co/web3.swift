@@ -4,7 +4,7 @@
 //
 
 import Foundation
-@testable import stable-web3-swift
+@testable import web3
 
 class TestEthereumKeyStorage: EthereumSingleKeyStorageProtocol {
     

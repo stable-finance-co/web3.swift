@@ -4,8 +4,8 @@
 //
 
 import Foundation
-@testable import stable-web3-swift_zksync
-@testable import stable-web3-swift
+@testable import web3_zksync
+@testable import web3
 import XCTest
 import BigInt
 

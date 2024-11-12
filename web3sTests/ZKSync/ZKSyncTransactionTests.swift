@@ -4,8 +4,8 @@
 //
 
 import XCTest
-@testable import stable-web3-swift_zksync
-@testable import stable-web3-swift
+@testable import web3_zksync
+@testable import web3
 import BigInt
 
 final class ZKSyncTransactionTests: XCTestCase {

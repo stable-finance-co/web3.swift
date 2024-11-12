@@ -5,7 +5,7 @@
 
 import BigInt
 import XCTest
-@testable import stable-web3-swift
+@testable import web3
 
 class ABIEventTests: XCTestCase {
     var client: EthereumClientProtocol!

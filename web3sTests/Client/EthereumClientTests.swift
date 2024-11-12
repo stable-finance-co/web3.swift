@@ -6,7 +6,7 @@
 import BigInt
 import NIO
 import XCTest
-@testable import stable-web3-swift
+@testable import web3
 
 struct TransferMatchingSignatureEvent: ABIEvent {
     public static let name = "Transfer"

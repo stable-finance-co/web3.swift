@@ -4,7 +4,7 @@
 //
 
 import XCTest
-@testable import stable-web3-swift
+@testable import web3
 
 // https://github.com/ethereum/EIPs/blob/master/assets/eip-712/Example.js
 // https://github.com/dicether/js-eth-personal-sign-examples
