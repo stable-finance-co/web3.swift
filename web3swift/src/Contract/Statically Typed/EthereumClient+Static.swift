@@ -26,6 +26,7 @@ public extension ABIFunction {
 
         let parseOrFail: (String) throws -> T = { data in
             guard let response = (try? T(data: data)) else {
+                
                 throw EthereumClientError.decodeIssue
             }
 
@@ -34,7 +35,7 @@ public extension ABIFunction {
 
         do {
             let data = try await client.eth_call(tx, resolution: resolution, block: block)
-
+            print("raw ethCall data: \(data)")
             return try parseOrFail(data)
         } catch {
             if let error = error as? EthereumClientError {
