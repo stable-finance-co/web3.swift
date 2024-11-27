@@ -35,7 +35,6 @@ public extension ABIFunction {
 
         do {
             let data = try await client.eth_call(tx, resolution: resolution, block: block)
-            print("raw ethCall data: \(data)")
             return try parseOrFail(data)
         } catch {
             if let error = error as? EthereumClientError {
